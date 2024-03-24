@@ -52,15 +52,6 @@ header {
     font-family: "Rajdhani";
     margin-left: 5%;
     font-weight: 200;
-    animation: floatIn 1.6s;
-}
-@keyframes floatIn {
-    from {
-        margin-top: 50%;
-    }
-    to {
-        margin-top: 0;
-    }
 }
 header h2 {
     margin-top: 25%;
@@ -75,7 +66,6 @@ header h1 {
 /* about me */
 #aboutMe {
     margin-top: 6%;
-    width: 100%;
     background-color: #FFF6F6;
     border-top-right-radius: 10%;
 }
@@ -105,14 +95,23 @@ section p {
 .infoContainer {
     padding: 20px 80px;
 }
+#knowMe {
+}
+#knowMe img {
+    width: 20%;
+    border-radius: 50%;
+    position: absolute;
+    top: 150vh;
+    left: 73%;
+}
 #aboutMe div h2 {
     font-family: "Rajdhani";
     color: #f886b4;
 }
 #aboutMe div p {
+    width: 70%;
     text-align: left;
     padding: 20px 0;
-    width: 70%;
 }
 #aboutMe div #skills {
     display: flex;
@@ -140,15 +139,7 @@ section p {
     animation: backgroundColorFade 0.3s;
     animation-fill-mode: forwards;
 }
-#knowMe {
-    display: flex;
-}
-#knowMe img {
-    width: 20%;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 @keyframes ColorFade {
     to {
         color: #f886b4;
@@ -168,6 +159,8 @@ section p {
 #contactMe {
     background-image: url("../img/formbackground.jpg");
     background-size: 100%;
+    padding: 80px 0;
+    background-repeat: no-repeat;
 }
 #contactForm {
     background-color: white;
