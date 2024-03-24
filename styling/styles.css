@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #FFF6F6;
+}
+#circle1 {
+    z-index: -1;
+    position: absolute; 
+    left: 50%;
+    top: 20%;
+    background-color: #f886b4;
+    width: 80%;
+    height: 140%;
+    border-radius: 50%;
+    -webkit-filter: blur(200px);
+}
+/* nav */
+nav {
+    width: 30%;
+    margin-left: auto;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    padding: 20px 0;
+}
+nav a {
+    font-size: 20px;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #5c0326;
+    font-family: "Rajdhani";
+    font-weight: 500;
+}
+nav a:hover {
+    animation: ColorFade 0.3s;
+    animation-fill-mode: forwards;
+}
+/* header */
+#line1 {
+    background-color: #5c0326;
+    width: 15%;
+    height: 5px;
+    margin: 30px 0 0 0;
+}
+header {
+    color: #5c0326;
+    font-family: "Rajdhani";
+    margin-left: 5%;
+    font-weight: 200;
+    animation: floatIn 1.6s;
+}
+@keyframes floatIn {
+    from {
+        margin-top: 50%;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+header h2 {
+    margin-top: 25%;
+    font-size: 40px;
+    font-weight: 600;
+}
+header h1 {
+    margin: 10px 0;
+    font-size: 120px;
+    font-weight: 600;
+}
+/* about me */
+#aboutMe {
+    margin-top: 6%;
+    width: 100%;
+    background-color: #FFF6F6;
+    border-top-right-radius: 10%;
+}
+section h1 {
+    text-align: center;
+    color: black;
+    font-family: "Rajdhani";
+    font-size: 50px;
+    padding: 100px 0 30px 0;
+}
+.line {
+    padding: 0;
+    width: 40px;
+    height: 5px;
+    background-color: #f886b4;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+section p {
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.infoContainer {
+    padding: 20px 80px;
+}
+#aboutMe div h2 {
+    font-family: "Rajdhani";
+    color: #f886b4;
+}
+#aboutMe div p {
+    text-align: left;
+    padding: 20px 0;
+    width: 70%;
+}
+#aboutMe div #skills {
+    display: flex;
+    padding: 0;
+}
+#aboutMe div #skills .skillItem {
+    text-align: center;
+}
+#aboutMe div #skills p {
+    width: 100px;
+    background-color: rgba(197, 197, 197, 0.476);
+    padding: 15px 30px;
+    margin: 20px 5px;
+    border-radius: 5px;
+}
+#aboutMe button {
+    background-color: #f1a5c3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+#aboutMe button:hover {
+    cursor: pointer;
+    animation: backgroundColorFade 0.3s;
+    animation-fill-mode: forwards;
+}
+#knowMe {
+    display: flex;
+}
+#knowMe img {
+    width: 20%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes ColorFade {
+    to {
+        color: #f886b4;
+    }
+}
+@keyframes backgroundColorFade {
+    to {
+        background-color: #be326a;
+        color: white;
+    }
+}
+/* my work */
+#myWork {
+    background-color: #FFF6F6;
+}
+/* contact me */
+#contactMe {
+    background-image: url("../img/formbackground.jpg");
+    background-size: 100%;
+}
+#contactForm {
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    border: 1px solid #be326a;
+}
+#contactForm input {
+    text-align: center;
+    width: 60%;
+    margin: 5px;
+    padding: 10px 5px;
+    margin-left: 19%;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#contactForm input:focus {
+    outline: none;
+    border-bottom: 2px solid #be326a;
+    text-align: center;
+}
+
+#contactForm textarea {
+    text-align: center;
+    width: 60%;
+    padding: 10px 5px;
+    margin-left: 19%;
+    margin: 1% 0 3% 19%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#contactForm textarea:focus {
+    border: none;
+    outline: 2px solid #be326a;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contactForm input::placeholder, #contactForm textarea::placeholder{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+         
+#contactForm #formSubmit {
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 7%;
+    background-image: linear-gradient(to right, #f886b4 0%, #be326a  51%, #f886b4  100%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+  }
+
+  #contactForm #formSubmit:hover{
+    cursor: pointer;
+    background-position: right center;
+    color: white;
+    text-decoration: none;
+  }
+ 
+/* footer */
+footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-family: "Rajdhani";
+}
+footer h2 {
+    padding: 100px 0 30px 60px;
+}
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    padding: 0 0 50px 60px;
+    border-bottom: 1px solid gray;
+}
