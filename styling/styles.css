@@ -95,8 +95,6 @@ section p {
 .infoContainer {
     padding: 20px 80px;
 }
-#knowMe {
-}
 #knowMe img {
     width: 20%;
     border-radius: 50%;
@@ -154,6 +152,35 @@ section p {
 /* my work */
 #myWork {
     background-color: #FFF6F6;
+}
+.workItem {
+    margin: 0 5%;
+    text-decoration: none;
+    display: flex;
+    border-bottom: 2px solid #be326a;
+    border-radius: 10px;
+}
+.workItemTxt {
+    padding-right: 100px;
+    margin: auto;
+    display: block;
+}
+.workItemTxt h2 {
+    font-family: "Rajdhani";
+    color: #f886b4;
+}
+.workItemTxt p {
+    text-align: left;
+    color: black;
+}
+.workItem:hover {
+    animation: itemFade 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes itemFade {
+    to {
+        background-color: #ffd6e7;
+    }
 }
 /* contact me */
 #contactMe {
